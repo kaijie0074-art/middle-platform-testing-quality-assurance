@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-10-12T08:26:22.494Z",
+  "checks": [
+    {
+      "id": "contract-gate",
+      "status": "passed",
+      "detail": "normal create response satisfies required fields"
+    },
+    {
+      "id": "QA-001-negative",
+      "status": "detected",
+      "detail": "missing state"
+    },
+    {
+      "id": "QA-001-negative-type",
+      "status": "detected",
+      "detail": "audit must be an array"
+    },
+    {
+      "id": "state-gate",
+      "status": "passed",
+      "detail": "illegal transition has no side effect"
+    },
+    {
+      "id": "QA-002-negative",
+      "status": "detected",
+      "detail": "expected 409, got 200; state changed from draft to queued; audit changed after illegal transition; missing INVALID_TRANSITION"
+    },
+    {
+      "id": "api-gate",
+      "status": "passed",
+      "detail": "404 uses stable error envelope"
+    },
+    {
+      "id": "QA-003-negative",
+      "status": "detected",
+      "detail": "stack leaked in error response"
+    },
+    {
+      "id": "QA-003-negative-code",
+      "status": "detected",
+      "detail": "missing error.code"
+    },
+    {
+      "id": "browser-gate",
+      "status": "passed",
+      "detail": "normal user-visible workflow and audit"
+    },
+    {
+      "id": "QA-004-negative",
+      "status": "detected",
+      "detail": "page did not expose error feedback"
+    },
+    {
+      "id": "isolation-gate",
+      "status": "passed",
+      "detail": "parallel target stores do not share state"
+    }
+  ]
+}

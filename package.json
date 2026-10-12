@@ -1,0 +1,14 @@
+{
+  "name": "middle-platform-testing-quality-assurance",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Deterministic QA and quality-gate simulation for a retrieval-job middle platform.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node scripts/run-quality-suite.mjs",
+    "check": "node scripts/check-artifacts.mjs",
+    "reproduce": "node scripts/reproduce.mjs"
+  },
+  "devDependencies": { "playwright": "^1.60.0" }
+}
