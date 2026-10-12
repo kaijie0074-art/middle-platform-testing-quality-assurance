@@ -1,6 +1,6 @@
 # 中台测试与质量保障：Wayfinder Map
 
-> 状态：已验证，待远程仓库创建与最终一致性核对
+> 状态：已完成，远程 main 已创建并推送
 > 建立日期：2026-10-12
 > 项目中文名：中台测试与质量保障
 > 仓库目标：`middle-platform-testing-quality-assurance`
@@ -26,7 +26,7 @@
 - [x] `npm test` 运行契约、状态机、API、E2E 和质量门禁。
 - [x] 六个失败模式可重复注入，并有 issue report、repro、FIX、regression。
 - [x] 质量门禁能在分类、状态不变性、响应契约和 UI 反馈错误时识别缺陷。
-- [ ] Public GitHub 仓库无真实凭据和用户数据，文档解释测试边界。
+- [x] Public GitHub 仓库无真实凭据和用户数据，文档解释测试边界。
 
 ## Evidence
 
@@ -34,6 +34,7 @@
 - `npm run check`：PASS，6 个问题报告、27 个文件扫描。
 - `npm run reproduce`：PASS，正常 contract、illegal transition 和 missing-job error 探针无失败。
 - Chromium 156.0.8078.4 完成正常页面流程；`ui-no-error` 负向夹具被检测。
+- Remote：`https://github.com/kaijie0074-art/middle-platform-testing-quality-assurance`
 
 ## Not yet specified
 
